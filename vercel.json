@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/posts/:path*", "destination": "/download", "permanent": false },
+    { "source": "/events/:path*", "destination": "/download", "permanent": false },
+    { "source": "/users/:path*", "destination": "/download", "permanent": false },
+    { "source": "/university/:path*", "destination": "/download", "permanent": false }
+  ]
+}
