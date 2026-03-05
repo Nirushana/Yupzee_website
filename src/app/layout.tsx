@@ -22,6 +22,13 @@ export const metadata: Metadata = {
   },
   description:
     "Discover events, land jobs, and stay in the loop all in one campus social network made for university students.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "Yupzee Your University Social Network",
     description:
