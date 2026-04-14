@@ -15,7 +15,9 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100/80 shadow-sm shadow-gray-100/50">
+      {/* Gradient accent line at the very top */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-primary via-teal to-primary" aria-hidden="true" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -44,8 +46,8 @@ export default function Header() {
                 aria-current={pathname === link.href ? "page" : undefined}
                 className={`text-sm font-medium transition-colors duration-200 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
                   pathname === link.href
-                    ? "text-primary-dark"
-                    : "text-gray-600 hover:text-primary-dark"
+                    ? "text-gray-900 underline underline-offset-4 decoration-primary/40"
+                    : "text-gray-500 hover:text-gray-900"
                 }`}
               >
                 {link.label}
